@@ -1,0 +1,9 @@
+<p>studente works!</p>
+
+
+<div *ngFor="let student of studente">
+    <label for="nome">Studente: </label> <br>
+    <!-- <input value="{{student.nome}}" placeholder="nome dello studente"> -->
+    <span>id: {{student.id}}</span>
+    <input name="nome" [(ngModel)]="student.nome" placeholder="nome dello studente">
+</div>
