@@ -1,9 +1,12 @@
 <p>studente works!</p>
 
 
-<div *ngFor="let student of studente">
+<div *ngFor="let studente of studenti">
     <label for="nome">Studente: </label> <br>
-    <!-- <input value="{{student.nome}}" placeholder="nome dello studente"> -->
-    <span>id: {{student.id}}</span>
-    <input name="nome" [(ngModel)]="student.nome" placeholder="nome dello studente">
+    <!-- <input value="{{studente.nome}}" placeholder="nome dello studente"> -->
+    <span>id: {{studente.id}}</span>
+    <input name="nome" [(ngModel)]="studente.nome" placeholder="nome dello studente">
 </div>
+
+<app-student-list></app-student-list>
+<!-- <app-student-list [hero]="varaibile"></app-student-list> -->

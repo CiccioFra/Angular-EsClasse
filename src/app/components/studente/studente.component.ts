@@ -8,10 +8,15 @@ import { STUDENTI } from '../mock/mock-studenti';
   styleUrls: ['./studente.component.scss']
 })
 export class StudenteComponent implements OnInit {
-studente: Studente[] = STUDENTI;
+studenti: Studente[] = STUDENTI;
+selectStudente?: Studente;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelect(studente: Studente){
+    this.selectStudente = studente;
   }
 
 }
