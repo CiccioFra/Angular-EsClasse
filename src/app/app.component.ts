@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  progetto: string = "Esercizi Angular svolto in classe";
   title = 'esercizi-angular';
 }
